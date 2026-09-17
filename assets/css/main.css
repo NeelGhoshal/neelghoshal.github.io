@@ -257,15 +257,25 @@ h2.h {
   overflow: hidden;
   box-shadow: var(--shadow);
 }
-.pub-card img {
-  width: 96px;
-  height: 96px;
-  object-fit: cover;
+.pub-art {
+  width: 84px;
+  height: auto;
+  align-self: stretch;
+  background: var(--bg-alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-shrink: 0;
 }
-.pub-body { padding: 12px 14px 12px 0; display: flex; flex-direction: column; justify-content: center; }
+.pub-art svg { width: 46px; height: 46px; }
+.pub-body { padding: 14px 14px 14px 0; display: flex; flex-direction: column; justify-content: center; }
 .pub-body h3 { margin: 0 0 4px; font-size: 0.92rem; line-height: 1.35; }
-.pub-body .year { color: var(--text-dim); font-size: 0.8rem; }
+.pub-body h3 a { color: var(--text); }
+.pub-body h3 a:hover { color: var(--accent); }
+.pub-body .authors { color: var(--text-dim); font-size: 0.78rem; margin: 0 0 3px; }
+.pub-body .venue { color: var(--text-dim); font-size: 0.78rem; font-style: italic; }
+.pub-body .year { color: var(--accent); font-size: 0.78rem; font-weight: 600; margin-top: 3px; }
+.pubs-note { color: var(--text-dim); font-size: 0.85rem; margin: 16px 0 0; }
 
 @media (max-width: 620px) {
   .pubs { grid-template-columns: 1fr; }
@@ -276,6 +286,8 @@ h2.h {
 .edu-item h3 { margin: 0 0 2px; font-size: 1.02rem; }
 .edu-item .when { color: var(--text-dim); font-size: 0.85rem; }
 .edu-item p { color: var(--text-dim); font-size: 0.93rem; margin: 8px 0 0; }
+
+.repo-link { display: inline-block; margin-top: 8px; font-size: 0.85rem; font-weight: 600; }
 
 /* ---------- Skills ---------- */
 .skill-group + .skill-group { margin-top: 18px; }
