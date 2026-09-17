@@ -247,21 +247,8 @@ h2.h {
 }
 
 /* ---------- Publications ---------- */
-.thesis-card {
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  padding: 20px 22px;
-  margin-bottom: 22px;
-}
-.thesis-card h3 { margin: 0 0 4px; font-size: 1.02rem; }
-.thesis-card h3 a { color: var(--text); }
-.thesis-card h3 a:hover { color: var(--accent); }
-.thesis-card > .venue { color: var(--text-dim); font-size: 0.83rem; font-style: normal; }
-.thesis-card p { color: var(--text-dim); font-size: 0.93rem; margin: 10px 0 0; }
-
 .pubs { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+.thesis-entry { grid-column: 1 / -1; }
 .pub-card {
   display: flex;
   gap: 14px;
@@ -289,6 +276,7 @@ h2.h {
 .pub-body .authors { color: var(--text-dim); font-size: 0.78rem; margin: 0 0 3px; }
 .pub-body .venue { color: var(--text-dim); font-size: 0.78rem; font-style: italic; }
 .pub-body .year { color: var(--accent); font-size: 0.78rem; font-weight: 600; margin-top: 3px; }
+.pub-body .pub-desc { color: var(--text-dim); font-size: 0.86rem; margin: 4px 0 6px; }
 .pubs-note { color: var(--text-dim); font-size: 0.85rem; margin: 16px 0 0; }
 
 @media (max-width: 620px) {
