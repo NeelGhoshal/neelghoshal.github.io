@@ -1,4 +1,4 @@
-/* Neel Ghoshal — portfolio */
+/* Neel Ghoshal: portfolio */
 
 :root {
   --bg: #ffffff;
@@ -287,7 +287,7 @@ h2.h {
 .edu-item .when { color: var(--text-dim); font-size: 0.85rem; }
 .edu-item p { color: var(--text-dim); font-size: 0.93rem; margin: 8px 0 0; }
 
-.repo-link { display: inline-block; margin-top: 8px; font-size: 0.85rem; font-weight: 600; }
+.repo-link { display: inline-block; margin-top: 8px; margin-right: 16px; font-size: 0.85rem; font-weight: 600; }
 
 /* ---------- Skills ---------- */
 .skill-group + .skill-group { margin-top: 18px; }
