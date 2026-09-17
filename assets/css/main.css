@@ -276,7 +276,6 @@ h2.h {
 .pub-body .authors { color: var(--text-dim); font-size: 0.78rem; margin: 0 0 3px; }
 .pub-body .venue { color: var(--text-dim); font-size: 0.78rem; font-style: italic; }
 .pub-body .year { color: var(--accent); font-size: 0.78rem; font-weight: 600; margin-top: 3px; }
-.pub-body .pub-desc { color: var(--text-dim); font-size: 0.86rem; margin: 4px 0 6px; }
 .pubs-note { color: var(--text-dim); font-size: 0.85rem; margin: 16px 0 0; }
 
 @media (max-width: 620px) {
