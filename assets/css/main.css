@@ -228,6 +228,7 @@ h2.h {
 .project-art svg { width: 100%; height: auto; max-height: 150px; }
 .project-body { padding: 20px 20px 20px 0; }
 .project-body h3 { margin: 0 0 6px; font-size: 1.08rem; }
+.project-body .award { color: var(--accent); font-weight: 600; font-size: 0.8rem; margin: -2px 0 8px; }
 .project-body p { margin: 0 0 12px; color: var(--text-dim); font-size: 0.93rem; }
 .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
 .tag {
@@ -309,13 +310,17 @@ h2.h {
 }
 
 /* ---------- Extras: certifications / leadership ---------- */
-.extras { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+.extras { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
 .extras h3 { font-size: 0.98rem; margin: 0 0 12px; }
 .extras ul { margin: 0; padding-left: 18px; color: var(--text-dim); font-size: 0.92rem; }
 .extras li + li { margin-top: 8px; }
 .extras .sub-cert-list { margin: 6px 0 0; padding-left: 16px; font-size: 0.86em; }
 .extras .sub-cert-list li { margin-top: 4px; }
 .extras .sub-cert-list li + li { margin-top: 4px; }
+
+@media (max-width: 860px) {
+  .extras { grid-template-columns: 1fr 1fr; }
+}
 
 @media (max-width: 620px) {
   .extras { grid-template-columns: 1fr; }
