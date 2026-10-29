@@ -295,6 +295,25 @@ main h2 {
 .body ul { padding-left: 1.1rem; margin-top: 0.6rem; }
 .body li + li { margin-top: 0.35rem; }
 .body li { color: var(--ink-2); }
+.body ul.chips {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.body ul.chips li {
+  margin: 0;
+  padding: 0.3rem 0.7rem;
+  font-family: var(--sans);
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: var(--ink);
+  background: color-mix(in srgb, var(--rule) 40%, var(--paper));
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+}
 .body li strong,
 .project-body .desc strong { font-weight: 700; color: var(--ink); }
 .more {
