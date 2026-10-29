@@ -349,21 +349,39 @@ h2.h {
   .talks-list { grid-template-columns: 1fr; }
 }
 
-/* ---------- Extras: certifications / leadership ---------- */
-.extras { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+/* ---------- Extras: certifications / awards / leadership ---------- */
+.sub-h { font-size: 0.98rem; margin: 0 0 6px; }
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 32px;
+  margin-bottom: 36px;
+}
+.cert-item { padding: 12px 0; border-bottom: 1px solid var(--border); }
+.cert-name { display: block; font-size: 0.93rem; font-weight: 500; line-height: 1.4; }
+span.cert-name { color: var(--text); }
+.cert-issuer { display: block; font-size: 0.8rem; color: var(--text-dim); margin-top: 2px; }
+.cert-courses { margin-top: 6px; }
+.cert-courses summary {
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent);
+  list-style: none;
+}
+.cert-courses summary::-webkit-details-marker { display: none; }
+.cert-courses summary::before { content: "▸ "; }
+.cert-courses[open] summary::before { content: "▾ "; }
+.cert-courses ul { margin: 6px 0 0; padding-left: 16px; font-size: 0.82rem; }
+.cert-courses li + li { margin-top: 4px; }
+
+.extras { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; }
 .extras h3 { font-size: 0.98rem; margin: 0 0 12px; }
 .extras ul { margin: 0; padding-left: 18px; color: var(--text-dim); font-size: 0.92rem; }
 .extras li + li { margin-top: 8px; }
-.extras .sub-cert-list { margin: 6px 0 0; padding-left: 16px; font-size: 0.86em; }
-.extras .sub-cert-list li { margin-top: 4px; }
-.extras .sub-cert-list li + li { margin-top: 4px; }
-
-@media (max-width: 860px) {
-  .extras { grid-template-columns: 1fr 1fr; }
-}
 
 @media (max-width: 620px) {
-  .extras { grid-template-columns: 1fr; }
+  .cert-grid, .extras { grid-template-columns: 1fr; }
 }
 
 /* ---------- Footer ---------- */
