@@ -334,14 +334,15 @@ main h2 {
 .project-body .desc strong { font-weight: 600; color: var(--ink); }
 
 /* ---------- Publications ---------- */
-.rows.pubs { gap: 1.5rem; }
+.rows.pubs { gap: 0; border-bottom: 1px solid var(--rule); }
+.rows.pubs > .row { padding: 1.35rem 0; border-top: 1px solid var(--rule); }
 .pub-icon { display: block; color: var(--ink-2); margin-top: 0.4rem; }
 .pub-icon svg { width: 2.25rem; height: 2.25rem; display: block; }
 .row.pub h3 { font-size: 1.0625rem; }
 .row.pub h3 a { color: var(--ink); text-decoration-color: var(--rule); }
 .row.pub h3 a:hover { color: var(--link); text-decoration-color: currentColor; }
 .authors { font-family: var(--sans); font-size: 0.875rem; color: var(--ink-2); margin-top: 0.25rem; }
-.venue { font-style: italic; color: var(--ink-2); font-size: 1rem; }
+.venue { font-style: italic; color: var(--ink-2); font-size: 1rem; margin-top: 0.1rem; }
 .note {
   font-family: var(--sans);
   font-size: 0.875rem;
