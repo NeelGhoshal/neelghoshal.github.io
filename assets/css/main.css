@@ -288,6 +288,9 @@ main h2 {
 .body .org + p { margin-top: 0.5rem; }
 .body ul { padding-left: 1.1rem; margin-top: 0.6rem; }
 .body li + li { margin-top: 0.35rem; }
+.body li { color: var(--ink-2); }
+.body li strong,
+.project-body .desc strong { font-weight: 700; color: var(--ink); }
 .more {
   font-family: var(--sans);
   font-size: 0.875rem;
@@ -331,8 +334,7 @@ main h2 {
 .desc[open] .show { display: none; }
 .desc[open] .hide { display: inline; }
 .project-body .desc { margin-top: 0.4rem; }
-.project-body .desc p { margin-top: 0.5rem; font-size: 1rem; line-height: 1.6; }
-.project-body .desc strong { font-weight: 600; color: var(--ink); }
+.project-body .desc p { margin-top: 0.5rem; font-size: 1rem; line-height: 1.6; color: var(--ink-2); }
 
 /* ---------- Publications ---------- */
 .rows.pubs { gap: 0; border-bottom: 1px solid var(--rule-strong); }
