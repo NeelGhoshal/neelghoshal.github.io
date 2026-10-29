@@ -225,6 +225,7 @@ h1, h2, h3 { font-weight: 600; margin: 0; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .career-svg .bar, .career-svg .dot, .career-svg .mark-label { animation: none; }
+  .project:target { animation: none; }
 }
 
 .tip {
@@ -304,6 +305,8 @@ main h2 {
   grid-template-columns: var(--when) minmax(0, 1fr);
   gap: 2rem;
 }
+.project:target { animation: target-flash 1.8s ease-out; }
+@keyframes target-flash { from { background: var(--rule); box-shadow: 0 0 0 0.75rem var(--rule); } to { background: transparent; box-shadow: 0 0 0 0.75rem transparent; } }
 .project-art { color: var(--ink-2); padding-top: 0.35rem; }
 .project-art svg { display: block; width: 100%; height: auto; }
 .project-art .panel { stroke: currentColor; stroke-width: 1.25; opacity: 0.45; }
