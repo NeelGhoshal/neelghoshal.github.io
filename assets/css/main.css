@@ -310,42 +310,44 @@ h2.h {
 }
 
 /* ---------- Teaching & Talks ---------- */
-.video-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
-  gap: 16px;
-}
-.video-card {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  color: var(--text);
-}
-.video-card:hover { text-decoration: none; }
-.video-thumb {
-  position: relative;
-  display: block;
-  aspect-ratio: 16 / 9;
-  border-radius: 10px;
-  overflow: hidden;
-  background: var(--bg-alt);
+.talks-toggle {
   border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--card);
+  box-shadow: var(--shadow);
+  padding: 4px 20px;
 }
-.video-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
-.video-thumb .play-icon {
-  position: absolute;
-  inset: 0;
+.talks-toggle summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 16px 0;
+  font-weight: 600;
+  font-size: 0.95rem;
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: 1.1rem;
-  color: #fff;
-  background: rgba(20, 20, 40, 0.25);
-  opacity: 0;
-  transition: opacity 0.15s;
+  gap: 8px;
 }
-.video-card:hover .play-icon { opacity: 1; }
-.video-title { font-size: 0.85rem; font-weight: 500; line-height: 1.3; }
+.talks-toggle summary::-webkit-details-marker { display: none; }
+.talks-toggle summary::before {
+  content: "▸";
+  color: var(--accent);
+  transition: transform 0.15s;
+  display: inline-block;
+}
+.talks-toggle[open] summary::before { transform: rotate(90deg); }
+.talks-list {
+  margin: 0;
+  padding: 0 0 18px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 24px;
+}
+.talks-list a { font-size: 0.9rem; }
+
+@media (max-width: 620px) {
+  .talks-list { grid-template-columns: 1fr; }
+}
 
 /* ---------- Extras: certifications / leadership ---------- */
 .extras { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
