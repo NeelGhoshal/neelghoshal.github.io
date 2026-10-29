@@ -199,8 +199,11 @@
           </div>
           <div class="project-body">
             <h3>Course Tutor: Multi-Agent RAG</h3>
-            <p>A four-agent retrieval-augmented tutor for a Mathematics for Machine Learning course, answering only from the course's lecture slides and textbook: a Router classifies each question as lecture, textbook, or off-topic; a Tutor retrieves the relevant chunks and answers with page citations; a Verifier checks every claim against the retrieved text and triggers a retry if one is unsupported; and a Quizzer writes and grades quiz questions, logging missed topics to revisit first next time. Runs entirely on a local, open-weight LLM with no API key.</p>
             <p class="stack">Python, Ollama, Chroma, RAG, Streamlit, Multi-Agent Systems</p>
+            <details class="desc">
+              <summary><span class="show">Show description</span><span class="hide">Hide description</span></summary>
+              <p>A four-agent retrieval-augmented tutor for a Mathematics for Machine Learning course, answering only from the course's lecture slides and textbook: a Router classifies each question as lecture, textbook, or off-topic; a Tutor retrieves the relevant chunks and answers with page citations; a Verifier checks every claim against the retrieved text and triggers a retry if one is unsupported; and a Quizzer writes and grades quiz questions, logging missed topics to revisit first next time. Runs entirely on a local, open-weight LLM with no API key.</p>
+            </details>
             <p class="more"><a href="https://github.com/NeelGhoshal/MultiAgentRAG" target="_blank" rel="noopener">Code on GitHub</a></p>
           </div>
         </article>
@@ -220,8 +223,11 @@
           </div>
           <div class="project-body">
             <h3>Paper Librarian: MCP Research Library</h3>
-            <p>A local MCP (Model Context Protocol) server that gives Claude a searchable library of research papers: add papers by arXiv ID or PDF path, and Claude can search them, answer questions with section and page citations, compare papers, and follow citation links between papers in the library. Everything runs on-device, combining vector embeddings with BM25 keyword search over a local SQLite index, with no external service beyond arXiv downloads.</p>
             <p class="stack">Python, MCP, SQLite, sentence-transformers, PyMuPDF</p>
+            <details class="desc">
+              <summary><span class="show">Show description</span><span class="hide">Hide description</span></summary>
+              <p>A local MCP (Model Context Protocol) server that gives Claude a searchable library of research papers: add papers by arXiv ID or PDF path, and Claude can search them, answer questions with section and page citations, compare papers, and follow citation links between papers in the library. Everything runs on-device, combining vector embeddings with BM25 keyword search over a local SQLite index, with no external service beyond arXiv downloads.</p>
+            </details>
             <p class="more"><a href="https://github.com/NeelGhoshal/MCP" target="_blank" rel="noopener">Code on GitHub</a></p>
           </div>
         </article>
@@ -239,8 +245,11 @@
           </div>
           <div class="project-body">
             <h3>Cedarline: Insurance Service Agent</h3>
-            <p>A Salesforce Agentforce member service agent for Cedarline Health Plan, a hypothetical medical insurer: verifies a member's identity, then answers questions about claims, denial reasons, deductible and out-of-pocket balances, prior authorizations, service requests, and appeals, using only that member's own records. A data pipeline turns ~1,160 Synthea sample patients into Cedarline's data, adding it to Snowflake and to Salesforce Data Cloud, and feeds an Agentforce Data Library the agent searches to answer questions.</p>
             <p class="stack">Python, Salesforce Agentforce, Data Cloud, Snowflake, pandas</p>
+            <details class="desc">
+              <summary><span class="show">Show description</span><span class="hide">Hide description</span></summary>
+              <p>A Salesforce Agentforce member service agent for Cedarline Health Plan, a hypothetical medical insurer: verifies a member's identity, then answers questions about claims, denial reasons, deductible and out-of-pocket balances, prior authorizations, service requests, and appeals, using only that member's own records. A data pipeline turns ~1,160 Synthea sample patients into Cedarline's data, adding it to Snowflake and to Salesforce Data Cloud, and feeds an Agentforce Data Library the agent searches to answer questions.</p>
+            </details>
             <p class="more"><a href="https://github.com/NeelGhoshal/Insurance_Service_Agent" target="_blank" rel="noopener">Code on GitHub</a></p>
           </div>
         </article>
@@ -261,8 +270,11 @@
           <div class="project-body">
             <h3>Veritas: Multi-Agent Document Review</h3>
             <p class="award">MLH Best Use of Snowflake Winner</p>
-            <p>A document integrity review tool built for the ATO Hackathon: paste in a bill, resolution, or article, and four AI agents run in parallel, checking its completeness and sourcing, verifying its factual claims against live web search, confirming the authority of the people named in it, and flagging internal or external contradictions by severity. A LangGraph graph orchestrates the agents and merges their findings into one report.</p>
             <p class="stack">Python, LangGraph, Streamlit, Snowflake Cortex, Multi-Agent Systems</p>
+            <details class="desc">
+              <summary><span class="show">Show description</span><span class="hide">Hide description</span></summary>
+              <p>A document integrity review tool built for the ATO Hackathon: paste in a bill, resolution, or article, and four AI agents run in parallel, checking its completeness and sourcing, verifying its factual claims against live web search, confirming the authority of the people named in it, and flagging internal or external contradictions by severity. A LangGraph graph orchestrates the agents and merges their findings into one report.</p>
+            </details>
             <p class="more"><a href="https://github.com/NeelGhoshal/Eval_Agent_System_NRTF" target="_blank" rel="noopener">Code on GitHub</a></p>
           </div>
         </article>
@@ -282,8 +294,11 @@
           </div>
           <div class="project-body">
             <h3>Radiology AI Triage API</h3>
-            <p>A Django backend that prioritizes AI-flagged imaging findings (X-ray, CT, MRI) for radiologist review: critical, high-confidence findings surface first in the worklist. Radiologist verdicts are recorded and rolled up into a confirmation-rate stat, a rough real-world measure of how much the AI's flags can be trusted.</p>
             <p class="stack">Python, Django, REST API, Unit Testing</p>
+            <details class="desc">
+              <summary><span class="show">Show description</span><span class="hide">Hide description</span></summary>
+              <p>A Django backend that prioritizes AI-flagged imaging findings (X-ray, CT, MRI) for radiologist review: critical, high-confidence findings surface first in the worklist. Radiologist verdicts are recorded and rolled up into a confirmation-rate stat, a rough real-world measure of how much the AI's flags can be trusted.</p>
+            </details>
             <p class="more"><a href="https://github.com/NeelGhoshal/Radiology_AI_Triage" target="_blank" rel="noopener">Code on GitHub</a></p>
           </div>
         </article>
@@ -302,8 +317,11 @@
           </div>
           <div class="project-body">
             <h3>Salary Prediction Web App</h3>
-            <p>A machine learning web app that predicts developer salary from country, education level, and years of experience, trained on the Stack Overflow Developer Survey and served through an interactive Streamlit interface.</p>
             <p class="stack">Python, Streamlit, scikit-learn, pandas</p>
+            <details class="desc">
+              <summary><span class="show">Show description</span><span class="hide">Hide description</span></summary>
+              <p>A machine learning web app that predicts developer salary from country, education level, and years of experience, trained on the Stack Overflow Developer Survey and served through an interactive Streamlit interface.</p>
+            </details>
             <p class="more"><a href="https://github.com/NeelGhoshal/SalaryPrediction_WebApp" target="_blank" rel="noopener">Code on GitHub</a></p>
           </div>
         </article>
@@ -324,8 +342,11 @@
           </div>
           <div class="project-body">
             <h3>Neural Style Transfer</h3>
-            <p>An implementation of "A Neural Algorithm of Artistic Style": blends the content of one image with the visual style of another using a pretrained VGG network and gradient-based optimization in TensorFlow.</p>
             <p class="stack">TensorFlow, Keras, VGG, Deep Learning, Python</p>
+            <details class="desc">
+              <summary><span class="show">Show description</span><span class="hide">Hide description</span></summary>
+              <p>An implementation of "A Neural Algorithm of Artistic Style": blends the content of one image with the visual style of another using a pretrained VGG network and gradient-based optimization in TensorFlow.</p>
+            </details>
             <p class="more"><a href="https://github.com/NeelGhoshal/NeuralStyleTransfer" target="_blank" rel="noopener">Code on GitHub</a></p>
           </div>
         </article>
@@ -345,8 +366,11 @@
           <div class="project-body">
             <h3>VirtuAble: Accessibility Project</h3>
             <p class="award">Best Freshers Award</p>
-            <p>A complete accessibility tool that lets visually impaired users control video calls without a keyboard or mouse: an OpenCV real-time hand-gesture pipeline maps gestures to meeting controls (mute, hand-raise) and pairs with speech recognition for audio feedback.</p>
             <p class="stack">OpenCV, Django, Speech Recognition, Python</p>
+            <details class="desc">
+              <summary><span class="show">Show description</span><span class="hide">Hide description</span></summary>
+              <p>A complete accessibility tool that lets visually impaired users control video calls without a keyboard or mouse: an OpenCV real-time hand-gesture pipeline maps gestures to meeting controls (mute, hand-raise) and pairs with speech recognition for audio feedback.</p>
+            </details>
             <p class="more"><a href="https://github.com/NeelGhoshal/Virtuable" target="_blank" rel="noopener">Code on GitHub</a></p>
           </div>
         </article>
@@ -369,8 +393,11 @@
           </div>
           <div class="project-body">
             <h3>WorkIn: Pose Detection for Workouts</h3>
-            <p>An online exercise-training platform built on PoseNet and p5.js. Real-time webcam posture detection tracks the user's skeleton and starts an on-screen timer only when the correct exercise posture is held, enabling accurate, self-guided personal training.</p>
             <p class="stack">p5.js, PoseNet, Computer Vision, JavaScript</p>
+            <details class="desc">
+              <summary><span class="show">Show description</span><span class="hide">Hide description</span></summary>
+              <p>An online exercise-training platform built on PoseNet and p5.js. Real-time webcam posture detection tracks the user's skeleton and starts an on-screen timer only when the correct exercise posture is held, enabling accurate, self-guided personal training.</p>
+            </details>
             <p class="more"><a href="https://github.com/NeelGhoshal/IIPProj-WorkIn" target="_blank" rel="noopener">Code on GitHub</a></p>
           </div>
         </article>
@@ -392,8 +419,11 @@
           <div class="project-body">
             <h3>FurnitAR</h3>
             <p class="award">2nd Prize, Google Developer Club Hackathon at VIT</p>
-            <p>An augmented-reality furniture-shopping app built in Unity: point your phone's camera at a room or object to measure it in AR, then browse matching furniture sized to fit from e-commerce listings, or drop a 3D model of a piece into your room to preview it in real time, with metric readouts handy for a trip to IKEA.</p>
             <p class="stack">Unity, AR Foundation, ARCore, ARKit, C#</p>
+            <details class="desc">
+              <summary><span class="show">Show description</span><span class="hide">Hide description</span></summary>
+              <p>An augmented-reality furniture-shopping app built in Unity: point your phone's camera at a room or object to measure it in AR, then browse matching furniture sized to fit from e-commerce listings, or drop a 3D model of a piece into your room to preview it in real time, with metric readouts handy for a trip to IKEA.</p>
+            </details>
             <p class="more"><a href="https://github.com/HeavyScam" target="_blank" rel="noopener">Code on GitHub</a></p>
           </div>
         </article>
@@ -403,7 +433,7 @@
   <section id="publications" class="wrap">
     <h2><span class="key s-res" aria-hidden="true"></span>Research and publications</h2>
     <p class="lede">A master's thesis and six peer-reviewed papers applying statistical and deep learning methods to real datasets.</p>
-    <div class="rows">
+    <div class="rows pubs">
         <div class="row pub">
           <div class="when">2026<span class="pub-icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
               <path d="M15 12 6 24l9 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>

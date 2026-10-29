@@ -318,9 +318,23 @@ main h2 {
   font-size: 0.875rem;
   color: var(--ink-2);
 }
+.desc summary {
+  font-family: var(--sans);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--link);
+}
+.desc summary:hover .show,
+.desc summary:hover .hide { text-decoration: underline; text-underline-offset: 0.2em; }
+.desc .hide,
+.desc[open] .show { display: none; }
+.desc[open] .hide { display: inline; }
+.project-body .desc { margin-top: 0.4rem; }
+.project-body .desc p { margin-top: 0.5rem; }
 
 /* ---------- Publications ---------- */
-.pub-icon { display: block; color: var(--ink-2); margin-top: 0.6rem; }
+.rows.pubs { gap: 1.5rem; }
+.pub-icon { display: block; color: var(--ink-2); margin-top: 0.4rem; }
 .pub-icon svg { width: 2.25rem; height: 2.25rem; display: block; }
 .row.pub h3 { font-size: 1.0625rem; }
 .row.pub h3 a { color: var(--ink); text-decoration-color: var(--rule); }
