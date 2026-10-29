@@ -453,6 +453,34 @@ ol.talks-list li::before {
   padding-top: 0.15rem;
 }
 
+.session-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(12.5rem, 1fr));
+  gap: 1.75rem 1.25rem;
+  margin: 0.5rem 0 1.75rem;
+}
+.session-card { display: block; color: var(--ink); text-decoration: none; }
+.session-card .thumb {
+  display: block;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 3px;
+  border: 1px solid var(--rule);
+  background: var(--rule);
+}
+.session-card img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.session-card:hover .thumb { border-color: var(--ink-2); }
+.session-card:hover .topic { color: var(--link); text-decoration: underline; text-underline-offset: 0.2em; }
+.session-num {
+  display: block;
+  margin-top: 0.6rem;
+  font-family: var(--sans);
+  font-size: 0.8125rem;
+  color: var(--ink-2);
+  font-variant-numeric: tabular-nums;
+}
+.session-card .topic { display: block; font-size: 1rem; line-height: 1.4; margin-top: 0.1rem; }
+
 /* ---------- Footer ---------- */
 footer {
   margin-top: 5rem;
@@ -476,5 +504,6 @@ footer .fine { font-family: var(--sans); font-size: 0.8125rem; color: var(--ink-
   .ledger > li { grid-template-columns: minmax(0, 1fr); }
   .l-meta { text-align: left; }
   .swipe-hint { display: inline; }
+  .session-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem 1rem; }
   main section { padding-top: 3.5rem; }
 }
