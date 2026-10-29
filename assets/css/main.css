@@ -350,38 +350,37 @@ h2.h {
 }
 
 /* ---------- Extras: certifications / awards / leadership ---------- */
-.sub-h { font-size: 0.98rem; margin: 0 0 6px; }
-.cert-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 32px;
-  margin-bottom: 36px;
+.ledger-group + .ledger-group { margin-top: 30px; }
+.ledger-group h3 { font-size: 0.98rem; margin: 0 0 4px; }
+.ledger { list-style: none; margin: 0; padding: 0; }
+.ledger > li { border-bottom: 1px solid var(--border); padding: 10px 0; }
+.ledger-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  font-size: 0.92rem;
 }
-.cert-item { padding: 12px 0; border-bottom: 1px solid var(--border); }
-.cert-name { display: block; font-size: 0.93rem; font-weight: 500; line-height: 1.4; }
-span.cert-name { color: var(--text); }
-.cert-issuer { display: block; font-size: 0.8rem; color: var(--text-dim); margin-top: 2px; }
-.cert-courses { margin-top: 6px; }
+.ledger-row > span:first-child { color: var(--text); }
+.ledger-meta { color: var(--text-dim); font-size: 0.82rem; text-align: right; white-space: nowrap; }
+.cert-courses { margin-top: 4px; }
 .cert-courses summary {
   cursor: pointer;
   font-size: 0.8rem;
   font-weight: 600;
   color: var(--accent);
   list-style: none;
+  width: max-content;
 }
 .cert-courses summary::-webkit-details-marker { display: none; }
 .cert-courses summary::before { content: "▸ "; }
 .cert-courses[open] summary::before { content: "▾ "; }
-.cert-courses ul { margin: 6px 0 0; padding-left: 16px; font-size: 0.82rem; }
+.cert-courses ul { margin: 6px 0 2px; padding-left: 16px; font-size: 0.84rem; color: var(--text-dim); }
 .cert-courses li + li { margin-top: 4px; }
 
-.extras { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; }
-.extras h3 { font-size: 0.98rem; margin: 0 0 12px; }
-.extras ul { margin: 0; padding-left: 18px; color: var(--text-dim); font-size: 0.92rem; }
-.extras li + li { margin-top: 8px; }
-
 @media (max-width: 620px) {
-  .cert-grid, .extras { grid-template-columns: 1fr; }
+  .ledger-row { flex-direction: column; gap: 2px; }
+  .ledger-meta { text-align: left; white-space: normal; }
 }
 
 /* ---------- Footer ---------- */
