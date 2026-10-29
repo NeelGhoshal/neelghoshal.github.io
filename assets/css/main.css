@@ -330,7 +330,8 @@ main h2 {
 .desc[open] .show { display: none; }
 .desc[open] .hide { display: inline; }
 .project-body .desc { margin-top: 0.4rem; }
-.project-body .desc p { margin-top: 0.5rem; }
+.project-body .desc p { margin-top: 0.5rem; font-size: 1rem; line-height: 1.6; }
+.project-body .desc strong { font-weight: 600; color: var(--ink); }
 
 /* ---------- Publications ---------- */
 .rows.pubs { gap: 1.5rem; }
