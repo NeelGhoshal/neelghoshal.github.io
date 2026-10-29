@@ -436,23 +436,6 @@ details[open] > summary::before { transform: rotate(90deg); }
   font-weight: 400;
   color: var(--ink-2);
 }
-.talks-list { list-style: none; padding: 0; margin: 0 0 1.25rem; counter-reset: talk; }
-.talks-list li { padding: 0.3rem 0 0.3rem 2.25rem; }
-ol.talks-list li {
-  counter-increment: talk;
-  display: grid;
-  grid-template-columns: 2.25rem minmax(0, 1fr);
-  padding-left: 0;
-}
-ol.talks-list li::before {
-  content: counter(talk);
-  font-family: var(--sans);
-  font-size: 0.875rem;
-  color: var(--ink-2);
-  font-variant-numeric: tabular-nums;
-  padding-top: 0.15rem;
-}
-
 .session-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(12.5rem, 1fr));
