@@ -307,10 +307,24 @@ main h2 {
   margin-top: 2rem;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 3.25rem 3.5rem;
-  align-items: start;
+  gap: 0 3.5rem;
 }
-.project { display: block; }
+/* Each card spans six shared rows (art, title, award, stack, description, link)
+   so the same element lines up across the two cards in a row. */
+.project {
+  display: grid;
+  grid-row: span 6;
+  grid-template-rows: subgrid;
+  row-gap: 0;
+  align-content: start;
+}
+.project-art { grid-row: 1; }
+.project-body { display: contents; }
+.project-body h3 { grid-row: 2; }
+.project-body .award { grid-row: 3; }
+.project-body .stack { grid-row: 4; }
+.project-body .desc { grid-row: 5; }
+.project-body .more { grid-row: 6; margin-bottom: 3.25rem; }
 .project:target { animation: target-flash 1.8s ease-out; }
 @keyframes target-flash { from { background: var(--rule); box-shadow: 0 0 0 0.75rem var(--rule); } to { background: transparent; box-shadow: 0 0 0 0.75rem transparent; } }
 .project-art {
@@ -482,7 +496,8 @@ footer .fine { font-family: var(--sans); font-size: 0.8125rem; color: var(--ink-
   .author-photo { width: 6.5rem; height: 8rem; }
   .hero h1 { font-size: 2.25rem; }
   .row { grid-template-columns: minmax(0, 1fr); gap: 0.35rem; }
-  .projects { grid-template-columns: minmax(0, 1fr); gap: 2.75rem; }
+  .projects { grid-template-columns: minmax(0, 1fr); }
+  .project-body .more { margin-bottom: 2.75rem; }
   .pub-icon { display: none; }
   .ledger > li { grid-template-columns: minmax(0, 1fr); }
   .l-meta { text-align: left; }
