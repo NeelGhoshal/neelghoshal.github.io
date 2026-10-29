@@ -5,6 +5,7 @@
   --ink: #142536;
   --ink-2: #4d5d6c;
   --rule: #dde3e8;
+  --rule-strong: #aab6c1;
   --link: #1a6aa3;
   --focus: #1f77b4;
 
@@ -27,6 +28,7 @@
     --ink: #e7edf2;
     --ink-2: #9fb0bf;
     --rule: #24384a;
+    --rule-strong: #46607a;
     --link: #7ab4e6;
     --focus: #7ab4e6;
     --s-edu: #4a95d0;
@@ -334,8 +336,8 @@ main h2 {
 .project-body .desc strong { font-weight: 600; color: var(--ink); }
 
 /* ---------- Publications ---------- */
-.rows.pubs { gap: 0; border-bottom: 1px solid var(--rule); }
-.rows.pubs > .row { padding: 1.35rem 0; border-top: 1px solid var(--rule); }
+.rows.pubs { gap: 0; border-bottom: 1px solid var(--rule-strong); }
+.rows.pubs > .row { padding: 1.35rem 0; border-top: 1px solid var(--rule-strong); }
 .pub-icon { display: block; color: var(--ink-2); margin-top: 0.4rem; }
 .pub-icon svg { width: 2.25rem; height: 2.25rem; display: block; }
 .row.pub h3 { font-size: 1.0625rem; }
