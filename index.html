@@ -88,12 +88,12 @@
           <g class="mark" tabindex="0" data-tip="Nov 2021: FurnitAR, an AR furniture-measurement app built in Unity" style="--d:910ms"><rect class="hit" x="316.7" y="204" width="32" height="32"/><rect class="dot s-proj" x="326.7" y="214" width="12" height="12" rx="2"/><text class="mark-label" x="332.7" y="206" text-anchor="middle">FurnitAR</text></g>
           <g class="mark" tabindex="0" data-tip="Mar to May 2023: Salary Prediction Web App and Neural Style Transfer" style="--d:980ms"><rect class="hit" x="483.5" y="204" width="32" height="32"/><rect class="dot s-proj" x="493.5" y="214" width="12" height="12" rx="2"/><text class="mark-label" x="499.5" y="206" text-anchor="middle">2 projects</text></g>
           <g class="mark" tabindex="0" data-tip="Aug to Dec 2023: WorkIn, webcam pose detection for workouts" style="--d:1050ms"><rect class="hit" x="562.0" y="204" width="32" height="32"/><rect class="dot s-proj" x="572.0" y="214" width="12" height="12" rx="2"/><text class="mark-label" x="578.0" y="206" text-anchor="middle">WorkIn</text></g>
-          <g class="mark" tabindex="0" data-tip="Sep to Oct 2026: Radiology AI Triage API, Veritas, Cedarline, Paper Librarian and Course Tutor" style="--d:1120ms"><rect class="hit" x="895.5" y="204" width="32" height="32"/><rect class="dot s-proj" x="905.5" y="214" width="12" height="12" rx="2"/><text class="mark-label" x="911.5" y="206" text-anchor="middle">5 projects</text></g>
+          <g class="mark" tabindex="0" data-tip="Sep to Nov 2026: Radiology AI Triage API, Veritas, Cedarline, Paper Librarian, Course Tutor and ToolHelper" style="--d:1120ms"><rect class="hit" x="895.5" y="204" width="32" height="32"/><rect class="dot s-proj" x="905.5" y="214" width="12" height="12" rx="2"/><text class="mark-label" x="911.5" y="206" text-anchor="middle">6 projects</text></g>
           </svg>
       <div class="tip" role="status" aria-live="polite" hidden></div>
     </div>
   </div>
-  <figcaption id="career-caption">Education, work, research and projects from July 2020 to October 2026. Bars
+  <figcaption id="career-caption">Education, work, research and projects from July 2020 to November 2026. Bars
     are enrolments and internships; circles count papers published that year; the diamond is the master's
     thesis; squares mark projects, with a count where several finished together. Hover over or tab to any mark for details. Each lane is listed in full below.<span class="swipe-hint"> Swipe sideways to see the whole timeline.</span></figcaption>
 </figure>
@@ -197,6 +197,31 @@
     <h2><span class="key s-proj" aria-hidden="true"></span>Projects</h2>
     <p class="lede">Hands-on projects in agentic AI, retrieval, computer vision and applied ML.</p>
     <div class="projects">
+        <article class="project" id="project-toolhelper">
+          <div class="project-art">
+            <svg aria-hidden="true" focusable="false" viewBox="8 8 184 114" xmlns="http://www.w3.org/2000/svg">
+              <rect class="panel" x="10" y="10" width="180" height="110" rx="3" fill="none"/>
+              <rect x="28" y="28" width="28" height="16" rx="3" fill="none" stroke="currentColor" stroke-width="2"/>
+              <rect x="28" y="57" width="28" height="16" rx="3" fill="none" stroke="currentColor" stroke-width="2"/>
+              <rect x="28" y="86" width="28" height="16" rx="3" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M56 36l30 26M56 65h30M56 94l30-26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              <circle cx="98" cy="65" r="12" fill="none" stroke="currentColor" stroke-width="2.2"/>
+              <rect x="128" y="40" width="10" height="60" rx="2" fill="currentColor" opacity="0.45"/>
+              <rect x="144" y="60" width="10" height="40" rx="2" fill="currentColor" opacity="0.65"/>
+              <rect x="160" y="74" width="10" height="26" rx="2" fill="currentColor" opacity="0.85"/>
+              <path d="M124 104h50" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="project-body">
+            <h3>ToolHelper: Token-Efficient MCP Tool Calls</h3>
+            <p class="stack">Python, MCP, LLM Agents, Ollama, Streamlit, Experiment Design</p>
+            <details class="desc">
+              <summary><span class="show">Show description</span><span class="hide">Hide description</span></summary>
+              <p>A monitoring and efficiency layer for how LLM agents call the tools of <strong>three biomedical MCP servers</strong> (Medical MCP, BioMCP and OMOP MCP). It records <strong>exact token usage per tool call</strong> and the pathway the model takes to reach each tool, then tests strategies that make those calls cheaper, such as schema compression, result shaping, a turn limit with a forced final answer, and an "answer early" instruction. Strategies are compared in <strong>fractional factorial experiments</strong> on a 54-task benchmark, and every accepted change carries a <strong>trust score</strong>, evidence and a versioned decision log. The accepted configuration <strong>cut tokens per successful task by 31%, then by a further 30%</strong>, while task success rose from 88% to 96%.</p>
+            </details>
+            <p class="more"><a href="https://github.com/NeelGhoshal/ToolHelper" target="_blank" rel="noopener">Code on GitHub</a></p>
+          </div>
+        </article>
         <article class="project" id="project-course-tutor">
           <div class="project-art">
             <svg aria-hidden="true" focusable="false" viewBox="8 8 184 114" xmlns="http://www.w3.org/2000/svg">
