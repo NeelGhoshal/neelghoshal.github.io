@@ -89,7 +89,7 @@
           <g class="mark" tabindex="0" data-tip="Nov 2021: FurnitAR, an AR furniture-measurement app built in Unity" style="--d:910ms"><rect class="hit" x="316.7" y="204" width="32" height="32"/><rect class="dot s-proj" x="326.7" y="214" width="12" height="12" rx="2"/><text class="mark-label" x="332.7" y="206" text-anchor="middle">FurnitAR</text></g>
           <g class="mark" tabindex="0" data-tip="Mar to May 2023: Salary Prediction Web App and Neural Style Transfer" style="--d:980ms"><rect class="hit" x="483.5" y="204" width="32" height="32"/><rect class="dot s-proj" x="493.5" y="214" width="12" height="12" rx="2"/><text class="mark-label" x="499.5" y="206" text-anchor="middle">2 projects</text></g>
           <g class="mark" tabindex="0" data-tip="Aug to Dec 2023: WorkIn, webcam pose detection for workouts" style="--d:1050ms"><rect class="hit" x="562.0" y="204" width="32" height="32"/><rect class="dot s-proj" x="572.0" y="214" width="12" height="12" rx="2"/><text class="mark-label" x="578.0" y="206" text-anchor="middle">WorkIn</text></g>
-          <g class="mark" tabindex="0" data-tip="Sep to Nov 2026: Radiology AI Triage API, Veritas, Cedarline, Paper Librarian, Course Tutor and ToolHelper" style="--d:1120ms"><rect class="hit" x="895.5" y="204" width="32" height="32"/><rect class="dot s-proj" x="905.5" y="214" width="12" height="12" rx="2"/><text class="mark-label" x="911.5" y="206" text-anchor="middle">6 projects</text></g>
+          <g class="mark" tabindex="0" data-tip="Sep to Nov 2026: Radiology AI Triage API, Veritas, Cedarline, Paper Librarian, Course Tutor, ToolHelper and TinyStories GPT" style="--d:1120ms"><rect class="hit" x="895.5" y="204" width="32" height="32"/><rect class="dot s-proj" x="905.5" y="214" width="12" height="12" rx="2"/><text class="mark-label" x="911.5" y="206" text-anchor="middle">7 projects</text></g>
           </svg>
       <div class="tip" role="status" aria-live="polite" hidden></div>
     </div>
@@ -198,6 +198,29 @@
     <h2><span class="key s-proj" aria-hidden="true"></span>Projects</h2>
     <p class="lede">Hands-on projects in agentic AI, retrieval, computer vision and applied ML.</p>
     <div class="projects">
+        <article class="project" id="project-tinystories-gpt">
+          <div class="project-art">
+            <svg aria-hidden="true" focusable="false" viewBox="8 8 184 114" xmlns="http://www.w3.org/2000/svg">
+              <rect class="panel" x="10" y="10" width="180" height="110" rx="3" fill="none"/>
+              <rect x="34" y="28" width="56" height="12" rx="2" fill="currentColor" opacity="0.85"/>
+              <rect x="34" y="46" width="56" height="12" rx="2" fill="currentColor" opacity="0.65"/>
+              <rect x="34" y="64" width="56" height="12" rx="2" fill="currentColor" opacity="0.45"/>
+              <rect x="34" y="82" width="56" height="12" rx="2" fill="currentColor" opacity="0.3"/>
+              <path d="M98 61h16m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="122" y="28" width="46" height="66" rx="3" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M130 42h30M130 52h30M130 62h30M130 72h22M130 82h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="project-body">
+            <h3>TinyStories GPT: A Language Model from Scratch</h3>
+            <p class="stack">Python, PyTorch, Transformers, BPE Tokenizer, Hugging Face Datasets</p>
+            <details class="desc">
+              <summary><span class="show">Show description</span><span class="hide">Hide description</span></summary>
+              <p>A GPT-style decoder-only transformer <strong>written and trained from scratch on a single laptop GPU</strong> (RTX 4060, 8 GB), with no pretrained weights or pretrained tokenizer. It trains its own <strong>byte-level BPE tokenizer</strong> with 8,192 tokens on the TinyStories dataset of about 2.1 million short stories, then trains a <strong>29.6M-parameter model</strong> (8 layers, 8 heads, 512-token context, pre-norm blocks and weight tying) with bf16, AdamW and a cosine learning-rate schedule tied to a wall-clock budget. After 6 hours and 1.44 billion tokens it reaches a <strong>validation loss of 1.285 (perplexity 3.6)</strong> and writes coherent short stories.</p>
+            </details>
+            <p class="more"><a href="https://github.com/NeelGhoshal/LLM_GPT_Model" target="_blank" rel="noopener">Code on GitHub</a></p>
+          </div>
+        </article>
         <article class="project" id="project-toolhelper">
           <div class="project-art">
             <svg aria-hidden="true" focusable="false" viewBox="8 8 184 114" xmlns="http://www.w3.org/2000/svg">
