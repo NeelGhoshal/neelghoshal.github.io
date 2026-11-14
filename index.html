@@ -91,7 +91,7 @@
           <g class="mark" tabindex="0" data-tip="Nov 2021: FurnitAR, an AR furniture-measurement app built in Unity" style="--d:910ms"><rect class="hit" x="316.7" y="204" width="32" height="32"/><rect class="dot s-proj" x="326.7" y="214" width="12" height="12" rx="2"/><text class="mark-label" x="332.7" y="206" text-anchor="middle">FurnitAR</text></g>
           <g class="mark" tabindex="0" data-tip="Mar to May 2023: Salary Prediction Web App and Neural Style Transfer" style="--d:980ms"><rect class="hit" x="483.5" y="204" width="32" height="32"/><rect class="dot s-proj" x="493.5" y="214" width="12" height="12" rx="2"/><text class="mark-label" x="499.5" y="206" text-anchor="middle">2 projects</text></g>
           <g class="mark" tabindex="0" data-tip="Aug to Dec 2023: WorkIn, webcam pose detection for workouts" style="--d:1050ms"><rect class="hit" x="562.0" y="204" width="32" height="32"/><rect class="dot s-proj" x="572.0" y="214" width="12" height="12" rx="2"/><text class="mark-label" x="578.0" y="206" text-anchor="middle">WorkIn</text></g>
-          <g class="mark" tabindex="0" data-tip="Sep to Nov 2026: Radiology AI Triage API, Veritas, Cedarline, Paper Librarian, Course Tutor, ToolHelper and TinyStories GPT" style="--d:1120ms"><rect class="hit" x="895.5" y="204" width="32" height="32"/><rect class="dot s-proj" x="905.5" y="214" width="12" height="12" rx="2"/><text class="mark-label" x="911.5" y="206" text-anchor="middle">7 projects</text></g>
+          <g class="mark" tabindex="0" data-tip="Sep to Nov 2026: Radiology AI Triage API, Veritas, Cedarline, Paper Librarian, Course Tutor, ToolHelper, TinyStories GPT and Jev LLM Cost Router" style="--d:1120ms"><rect class="hit" x="895.5" y="204" width="32" height="32"/><rect class="dot s-proj" x="905.5" y="214" width="12" height="12" rx="2"/><text class="mark-label" x="911.5" y="206" text-anchor="middle">8 projects</text></g>
           </svg>
       <div class="tip" role="status" aria-live="polite" hidden></div>
     </div>
@@ -200,6 +200,28 @@
     <h2><span class="key s-proj" aria-hidden="true"></span>Projects</h2>
     <p class="lede">Hands-on projects in agentic AI, retrieval, computer vision and applied ML.</p>
     <div class="projects">
+        <article class="project" id="project-jev-llm-cost-router">
+          <div class="project-art">
+            <svg aria-hidden="true" focusable="false" viewBox="8 8 184 114" xmlns="http://www.w3.org/2000/svg">
+              <rect class="panel" x="10" y="10" width="180" height="110" rx="3" fill="none"/>
+              <circle cx="40" cy="65" r="9" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M49 65h22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M84 52l13 13-13 13-13-13Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M97 65c14 0 14-27 30-27M97 65c14 0 14 27 30 27" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <rect x="131" y="31" width="20" height="14" rx="2" fill="currentColor" opacity="0.45"/>
+              <rect x="131" y="80" width="40" height="24" rx="2" fill="currentColor" opacity="0.85"/>
+            </svg>
+          </div>
+          <div class="project-body">
+            <h3>Jev LLM Cost Router</h3>
+            <p class="stack">Python, Ollama, Jev, LLM Routing, Model Evaluation</p>
+            <details class="desc">
+              <summary><span class="show">Show description</span><span class="hide">Hide description</span></summary>
+              <p>A router that uses Jev, TypeSafe AI's decision model, to decide when a <strong>cheap small LLM</strong> (qwen3:1.7b) is good enough and when a prompt needs a larger one (qwen3:8b), plus an evaluation against simple baselines on a <strong>cost versus accuracy curve</strong>. It compares two designs on 400 prompts from MMLU, MMLU-Pro, ARC-Challenge and GSM8K, with thresholds tuned on a dev split and 95% bootstrap intervals on the test split: <strong>pre-routing</strong>, where Jev predicts from the prompt alone whether the small model will be right, and a <strong>cascade</strong>, where Jev checks the small model's answer and escalates only the likely wrong ones. Pre-routing did no better than random routing, but Jev proved a <strong>reliable answer checker (AUROC 0.927)</strong>, and the cascade <strong>cut compute time by 41%</strong> against always using the large model, at 73% accuracy against 80%.</p>
+            </details>
+            <p class="more"><a href="https://github.com/NeelGhoshal/LLM_Cost_Router_JevAI" target="_blank" rel="noopener">Code on GitHub</a></p>
+          </div>
+        </article>
         <article class="project" id="project-tinystories-gpt">
           <div class="project-art">
             <svg aria-hidden="true" focusable="false" viewBox="8 8 184 114" xmlns="http://www.w3.org/2000/svg">
