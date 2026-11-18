@@ -321,6 +321,7 @@ main h2 {
   font-size: 0.875rem;
   margin-top: 0.6rem;
 }
+.more .sep { color: var(--rule-strong); margin: 0 0.6em; }
 
 /* ---------- Projects ---------- */
 .projects {
